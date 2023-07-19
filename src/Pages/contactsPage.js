@@ -29,18 +29,18 @@ export function ContactsPage() {
         // that wes entered into the form already exists, the browser will alert the user
         // of this. Otherwise, the inputs of the contacts form are used as arguments in the
         // addContact() function call
-        let bool;
+        let duplicate;
         for(let contact of contacts){
             if(contact.name===contactName){
-                bool = true;
+                duplicate = true;
                 break;
             } else {
-                bool = false;
+                duplicate = false;
             };
         };
 
        
-        if(!bool){
+        if(!duplicate){
             addContact(contactName, phone, email);
         } else {
             alert(`Contact name ${contactName} already exists`);
