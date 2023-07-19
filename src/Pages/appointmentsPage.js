@@ -30,7 +30,6 @@ export function AppointmentsPage(){
     <div>
         <nav>
         <h2>Appointments page</h2>
-        {/* <Link to="/contacts">Contacts Page</Link><br/> */}
         <a href="/contacts">Contacts Page</a>
         </nav>
         <AppointmentsForm handleSubmit={handleSubmit} appointments={appointments}/>
